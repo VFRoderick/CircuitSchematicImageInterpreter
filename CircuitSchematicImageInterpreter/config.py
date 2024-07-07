@@ -33,8 +33,10 @@ class Config:
 
         # io / config
         self.extension = '.tif'
-        self.exportPath = 'C:\\PycharmProjects\\MPhil_Project_Final_V0.0.1\\test_results\\'
-        self.tesseractPath = 'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
+        #self.exportPath = 'C:\\PycharmProjects\\MPhil_Project_Final_V0.0.1\\test_results\\'
+        self.exportPath = r'/content/drive/MyDrive/CircuitSchematicImageInterpreter/Eaton9130/Outputs'
+        #self.tesseractPath = 'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
+        self.tesseractPath = r'/usr/local/bin/pytesseract'
         self.exportDPI = (300, 300)
 
         # OCR / config
