@@ -34,6 +34,7 @@ class Config:
         # io / config
         self.extension = '.tif'
         self.exportPath = 'C:\\PycharmProjects\\MPhil_Project_Final_V0.0.1\\test_results\\'
+        self.tesseractPath = 'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
         self.exportDPI = (300, 300)
 
         # OCR / config

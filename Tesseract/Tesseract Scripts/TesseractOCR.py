@@ -22,6 +22,9 @@ import matplotlib.pyplot as plt
 
 import pytesseract as pyt
 
+##########################
+from CircuitSchematicImageInterpreter.config import Config
+config = Config()
 
 # Image importation handling
 def importImage(path):
@@ -102,7 +105,8 @@ def main():
     Directories = []
 
     # Initialising Tesseract
-    pyt.pytesseract.tesseract_cmd = 'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
+    #pyt.pytesseract.tesseract_cmd = 'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
+    pyt.pytesseract.tesseract_cmd = config.tesseractPath
 
     if TEST_DIR:
         for Directory in TESTING_DIRS:
